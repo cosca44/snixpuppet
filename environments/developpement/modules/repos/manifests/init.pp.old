@@ -1,0 +1,26 @@
+class repos {
+	case $::operatingsystem {
+		'RedHat' : {
+#TESTER versions i386 et x64
+			file { "/etc/yum.repos.d/rhel52_i386.repo":
+  			owner => root,
+  			group => root,
+  			mode => 644,
+  			source => "puppet:///modules/repos/rhel52_i386.repo"
+ 			}
+		}
+		'SLES' : {
+			file { "/etc/zypp/repos.d/SLES11SP3-DVD1.repo":
+                        owner => root,
+                        group => root,
+                        mode => 644,
+                        source => "puppet:///modules/repos/SLES11SP3-DVD1.repo"
+			}	
+		}
+		default : {
+            		notice("Module ${module_name} is not supported on ${::operatingsystem}")
+        	}
+	
+	}	
+
+}

@@ -1,0 +1,6 @@
+[rhel52_i386]
+name=Red Hat Enterprise Linux 5.2 - IMA
+baseurl=ftp://superv19.ima.intra/pub/RHEL52/RPM/
+enabled=1
+gpgcheck=0
+#gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release

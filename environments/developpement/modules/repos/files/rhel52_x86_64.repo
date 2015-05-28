@@ -1,0 +1,7 @@
+[rhel52_x86_64]
+name=Red Hat Enterprise Linux 5.2 x64 - IMA
+baseurl=ftp://superv19.ima.intra/pub/RHEL52_64/rhel-5.2-server-x86_64-dvd/Server
+enabled=1
+gpgcheck=0
+#gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+
